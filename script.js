@@ -5,6 +5,7 @@ const copyButtonText = document.querySelector("#copy-text");
 const callButtons = document.querySelectorAll(".call-button");
 const historyContainer = document.querySelector(".history-container");
 const cardHistory = document.querySelector(".card-history");
+const clearButton = document.querySelector("#clear-button");
 
 for (let i = 0; i < heartIcons.length; i++) {
     heartIcons[i].addEventListener("click", function () {
@@ -48,3 +49,7 @@ for (let i = 0; i < callButtons.length; i++) {
         cardHistory.append(newHistory);
     });
 }
+
+clearButton.addEventListener("click", function () {
+    cardHistory.innerHTML = "";
+});
