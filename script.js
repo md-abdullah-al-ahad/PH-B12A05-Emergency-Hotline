@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             newHistory.className =
                 "bg-gray-50 shadow-sm px-4 py-4 flex justify-between items-center rounded-lg left-section";
             newHistory.innerHTML = `
-                <div>
+                <div class="left-section">
                     <p class="mandurai-font history-service-name">${serviceName}</p>
                     <p class="history-number">${number}</p>
                 </div>
@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="history-time">${localTime}</p>
                 </div>
             `;
-            const cardHistory = document.querySelector(".card-history");
             cardHistory.append(newHistory);
         });
     }
