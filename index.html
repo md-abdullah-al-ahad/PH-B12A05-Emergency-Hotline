@@ -21,13 +21,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
         <header>
-            <nav class="navbar shadow-sm justify-between px-10 flex">
+            <nav class="navbar shadow-sm justify-between px-10 py-4 flex">
                 <div class="flex justify-center items-center gap-3">
                     <img
                         class="h-[60px] w-[60px]"
@@ -35,7 +35,7 @@
                         alt="logo"
                     />
                     <p
-                        class="mandurai-text text-xl text-[#006747] font-bold leading-[22px]"
+                        class="madurai-font text-xl text-[#006747] font-bold leading-[22px]"
                     >
                         Emergency <br />
                         Service
@@ -45,7 +45,12 @@
                     <div
                         class="hidden md:flex gap-2 justify-center items-center px-6 py-3 bg-[#41ff6a31] rounded-xl"
                     >
-                        <p id="heart-icon-text">0</p>
+                        <p
+                            id="heart-icon-text"
+                            class="inter-font text-[16px] font-extrabold"
+                        >
+                            0
+                        </p>
                         <img
                             class="h-[30px] w-[30px]"
                             src="./assets/heart.png"
@@ -55,7 +60,12 @@
                     <div
                         class="hidden md:flex gap-2 justify-center items-center px-6 py-3 bg-[#41ff6a31] rounded-xl"
                     >
-                        <p id="coin-text">100</p>
+                        <p
+                            id="coin-text"
+                            class="inter-font text-[16px] font-extrabold"
+                        >
+                            100
+                        </p>
                         <img
                             class="h-[30px] w-[30px]"
                             src="./assets/coin.png"
@@ -65,7 +75,9 @@
                     <div
                         class="hidden md:flex justify-center items-center px-6 py-3 bg-[#00a63dcc] rounded-xl text-center"
                     >
-                        <p><span id="copy-text">0</span> Copy</p>
+                        <p class="inter-font text-[16px] font-bold text-white">
+                            <span id="copy-text">0</span> Copy
+                        </p>
                     </div>
                     <a
                         class="flex items-center justify-center h-[40px] w-[40px] md:hidden"
@@ -76,7 +88,7 @@
                 </div>
             </nav>
             <div
-                class="banner bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] flex flex-col justify-center items-center gap-4 py-15"
+                class="banner bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] flex flex-col justify-center items-center gap-4 py-10"
             >
                 <img
                     class="w-[112px] h-[112px]"
@@ -84,12 +96,12 @@
                     alt=""
                 />
                 <h1
-                    class="mandurai-font text-[20px] md:text-[30px] lg:text-[40px] font-semibold text-[#FFFFFF]"
+                    class="madurai-font text-[20px] md:text-[30px] lg:text-[40px] font-semibold text-[#FFFFFF]"
                 >
                     জরুরি সেবা ডিরেক্টরি
                 </h1>
                 <p
-                    class="mandurai-font text-[10px] md:text-[15px] lg:text-[20px] font-semibold text-[#FFFFFF]"
+                    class="madurai-font text-[10px] md:text-[15px] lg:text-[20px] font-semibold text-[#FFFFFF]"
                 >
                     Government Emergency Services at Your Fingertip
                     <br class="block md:hidden" />
@@ -110,31 +122,35 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
                                     src="./assets/emergency.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             জাতীয় জরুরি সেবা
                         </div>
                         <div
                             class="text-sm text-gray-600 service-name-text-english"
                         >
-                            National Emergency
+                            National Emergency Service
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             999
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >সার্বজনীন</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -157,19 +173,21 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
                                     src="./assets/police.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             পুলিশ
                         </div>
                         <div
@@ -177,11 +195,13 @@
                         >
                             Police
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             999
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >পুলিশ</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -204,19 +224,21 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
                                     src="./assets/fire-service.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             ফায়ার সার্ভিস
                         </div>
                         <div
@@ -224,11 +246,13 @@
                         >
                             Fire Service
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             999
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >ফায়ার</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -251,19 +275,21 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
                                     src="./assets/ambulance.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             অ্যাম্বুলেন্স
                         </div>
                         <div
@@ -271,11 +297,13 @@
                         >
                             Ambulance
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             1994-999999
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >স্বাস্থ্য</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -298,31 +326,35 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
-                                    src="./assets/ambulance.png"
+                                    src="./assets/custody.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             নারী ও শিশু সহায়তা
                         </div>
                         <div
                             class="text-sm text-gray-600 service-name-text-english"
                         >
-                            Women & Child Helpline
+                            Women & Child Support
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             109
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >সহায়তা</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -345,31 +377,35 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
-                                    src="./assets/ambulance.png"
+                                    src="./assets/dudok-commision-logo-png.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             দুদক
                         </div>
                         <div
                             class="text-sm text-gray-600 service-name-text-english"
                         >
-                            Anti-Corruption
+                            Anti-Corruption Commission
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             106
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >সরকারি</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -392,31 +428,35 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
-                                    src="./assets/ambulance.png"
+                                    src="./assets/electrician(1).png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
-                            বিদ্যুৎ বিঘট
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
+                            বিদ্যুৎ বিভ্রাট
                         </div>
                         <div
                             class="text-sm text-gray-600 service-name-text-english"
                         >
                             Electricity Outage
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             16216
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >বিদ্যুৎ</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -439,19 +479,21 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
-                                    src="./assets/ambulance.png"
+                                    src="./assets/brac.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             ব্র্যাক
                         </div>
                         <div
@@ -459,11 +501,13 @@
                         >
                             Brac
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             16445
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >এনজিও</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -486,19 +530,21 @@
                     >
                         <div class="flex justify-between items-center">
                             <div
-                                class="w-10 h-10 bg-red-100 flex items-center justify-center rounded-lg"
+                                class="w-15 h-15 bg-red-100 flex items-center justify-center rounded-lg"
                             >
                                 <img
-                                    src="./assets/ambulance.png"
+                                    src="./assets/Bangladesh-Railway.png"
                                     alt="icon"
-                                    class="w-6 h-6"
+                                    class="w-10 h-10"
                                 />
                             </div>
                             <i
                                 class="fa-regular fa-heart text-gray-500 hover:text-red-500 cursor-pointer heart-icon"
                             ></i>
                         </div>
-                        <div class="mt-3 font-bold text-base service-name-text">
+                        <div
+                            class="mt-3 font-bold text-base service-name-text text-[24px]"
+                        >
                             বাংলাদেশ রেলওয়ে
                         </div>
                         <div
@@ -506,11 +552,13 @@
                         >
                             Bangladesh Railway
                         </div>
-                        <div class="mt-3 text-2xl font-bold number-text">
+                        <div
+                            class="mt-3 text-2xl font-bold number-text text-[26px]"
+                        >
                             163
                         </div>
                         <span
-                            class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                            class="madurai-font inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
                             >পরিবহন</span
                         >
                         <div class="flex gap-2 mt-4">
@@ -533,14 +581,14 @@
             <section
                 class="md:w-22/100 bg-white rounded-xl shadow-md p-4 flex flex-col history-container"
             >
-                <div class="flex justify-between pb-5">
+                <div class="flex justify-between pb-5 items-center">
                     <div class="flex items-center gap-2 justify-center">
-                        <i class="fa-solid fa-clock"></i>
-                        <p class="mandurai-font">Call History</p>
+                        <i class="fa-solid fa-clock text-[24px]"></i>
+                        <p class="text-[16px]">Call History</p>
                     </div>
                     <div>
                         <button
-                            class="px-6 py-3 bg-[#00A63E] rounded-[12px] cursor-pointer text-white font-semibold font-sans"
+                            class="px-4 py-2 bg-[#00A63E] rounded-[12px] cursor-pointer text-white font-semibold font-sans"
                             id="clear-button"
                         >
                             Clear
