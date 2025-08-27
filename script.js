@@ -31,7 +31,7 @@ for (let i = 0; i < callButtons.length; i++) {
         const coin = parseInt(coinText.textContent);
         if (coin < 20) {
             alert(
-                "❌আপনার পর্যাপ্ত কয়েন নেই! কল করার জন্য কমপক্ষে ২০টি কয়েন প্রয়োজন"
+                "❌ আপনার পর্যাপ্ত কয়েন নেই! কল করার জন্য কমপক্ষে ২০টি কয়েন প্রয়োজন"
             );
             return;
         }
