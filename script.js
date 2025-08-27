@@ -6,6 +6,7 @@ const callButtons = document.querySelectorAll(".call-button");
 const historyContainer = document.querySelector(".history-container");
 const cardHistory = document.querySelector(".card-history");
 const clearButton = document.querySelector("#clear-button");
+const coinText = document.querySelector("#coin-text");
 
 for (let i = 0; i < heartIcons.length; i++) {
     heartIcons[i].addEventListener("click", function () {
@@ -27,10 +28,21 @@ for (let i = 0; i < copyButtons.length; i++) {
 
 for (let i = 0; i < callButtons.length; i++) {
     callButtons[i].addEventListener("click", function () {
+        const coin = parseInt(coinText.textContent);
+        if (coin < 20) {
+            alert(
+                " ❌ আপনার পর্যাপ্ত কয়েন নেই! কল করার জন্য কমপক্ষে ২০ টি কয়েন প্রয়োজন"
+            );
+            return;
+        }
+        coinText.textContent = coin - 20;
         const card = callButtons[i].closest(".card-parent");
         const number = card.querySelector(".number-text").textContent.trim();
         const serviceName = card
             .querySelector(".service-name-text")
+            .textContent.trim();
+        const serviceNameEnglish = card
+            .querySelector(".service-name-text-english")
             .textContent.trim();
         const now = new Date();
         const localTime = now.toLocaleTimeString();
@@ -47,6 +59,7 @@ for (let i = 0; i < callButtons.length; i++) {
             </div>
         `;
         cardHistory.append(newHistory);
+        alert(`📞 Calling ${serviceNameEnglish} ${number}...`);
     });
 }
 
