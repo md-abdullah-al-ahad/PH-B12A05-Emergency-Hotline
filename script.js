@@ -1,17 +1,21 @@
 const heartIcons = document.querySelectorAll(".heart-icon");
 const heartIconText = document.querySelector("#heart-icon-text");
+const heartIconText2 = document.querySelector("#heart-icon-text-2");
 const copyButtons = document.querySelectorAll(".copy-button");
 const copyButtonText = document.querySelector("#copy-text");
+const copyButtonText2 = document.querySelector("#copy-text-2");
 const callButtons = document.querySelectorAll(".call-button");
 const historyContainer = document.querySelector(".history-container");
 const cardHistory = document.querySelector(".card-history");
 const clearButton = document.querySelector("#clear-button");
 const coinText = document.querySelector("#coin-text");
-
+const coinText2 = document.querySelector("#coin-text-2");
+const hamburgerIcon = document.querySelector("#hamburger-icon");
 for (let i = 0; i < heartIcons.length; i++) {
     heartIcons[i].addEventListener("click", function () {
         let count = parseInt(heartIconText.textContent);
         heartIconText.textContent = count + 1;
+        heartIconText2.textContent = count + 1;
     });
 }
 
@@ -23,6 +27,7 @@ for (let i = 0; i < copyButtons.length; i++) {
         alert(`নাম্বার কপি হয়েছে - ${number}`);
         let count = parseInt(copyButtonText.textContent);
         copyButtonText.textContent = count + 1;
+        copyButtonText2.textContent = count + 1;
     });
 }
 
@@ -36,6 +41,7 @@ for (let i = 0; i < callButtons.length; i++) {
             return;
         }
         coinText.textContent = coin - 20;
+        coinText2.textContent = coin - 20;
         const card = callButtons[i].closest(".card-parent");
         const number = card.querySelector(".number-text").textContent.trim();
         const serviceName = card
