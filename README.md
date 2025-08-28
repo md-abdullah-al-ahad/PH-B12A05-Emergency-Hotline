@@ -2,7 +2,7 @@
 
 # What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-Ans: getElementById() will return a single element not an array which is obvious because ids are unique. If the element is not found it will return null.
+Ans: getElementById() will return a single element not an array which is obvious because ids are unique. If the element is not found, it will return null.
 
 getElementsByClassName() will return an collection of element which can be accessed as a regular array through indexing (0...n-1). As class name is not unique there can be multiple element with the same class and therefore it returns all of them. One particular thing about this method is that it will return a live collection that is if dom changes it will return the live ccollection which querySelectorAll() will not do.
 
