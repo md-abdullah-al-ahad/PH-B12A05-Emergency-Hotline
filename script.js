@@ -10,7 +10,6 @@ const cardHistory = document.querySelector(".card-history");
 const clearButton = document.querySelector("#clear-button");
 const coinText = document.querySelector("#coin-text");
 const coinText2 = document.querySelector("#coin-text-2");
-const hamburgerIcon = document.querySelector("#hamburger-icon");
 for (let i = 0; i < heartIcons.length; i++) {
     heartIcons[i].addEventListener("click", function () {
         let count = parseInt(heartIconText.textContent);
